@@ -14,7 +14,10 @@ class ContadorPalavrasObserver {
 
     contar(frase) {
       this.contadorPalavras.contar(frase.split(" "));
+      this.contadorPalavrasPares.contar(frase.split(" "));
+      this.contadorPalavrasComecadasComMaiusculas.contar(frase.split(" "));
     }
+
   }
 
   export default ContadorPalavrasObserver

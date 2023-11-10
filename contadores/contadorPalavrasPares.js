@@ -1,17 +1,27 @@
 class ContadorPalavrasPares {
     constructor() {
-      this.total = 0;
+      this._total = 0;
     }
   
-    contar(palavra) {
-      if (palavra.length % 2 === 0) {
-        this.total++;
+    contar(frase) {
+      let novoTotal=0;
+
+      for(let i = 0; i <  frase.length; i++){ 
+        
+        if ((frase[i].length % 2) === 0) {           
+          novoTotal = novoTotal + 1;      
+        }
+        else{
+          novoTotal = novoTotal;
+        }
       }
-    }
+        this._total = novoTotal;
+      }
   
     get total() {
-      return this.total;
+      return this._total;
     }
+
   }
 
   export default ContadorPalavrasPares
