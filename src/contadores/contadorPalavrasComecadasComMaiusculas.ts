@@ -19,6 +19,11 @@ class ContadorPalavrasComecadasComMaiusculas {
     get total() {
       return this._total;
     }
+
+    adicionarObservador(){
+
+    }
+  
   }
 
   export default ContadorPalavrasComecadasComMaiusculas

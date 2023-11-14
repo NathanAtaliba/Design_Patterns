@@ -3,7 +3,7 @@ import ContadorPalavrasPares from './contadorPalavrasPares.js'
 import ContadorPalavrasComecadasComMaiusculas from './contadorPalavrasComecadasComMaiusculas.js'
 
 class ContadorPalavrasObserver {
-
+  private observers: Observer[] = [];
   public contadorPalavras: ContadorPalavras
   public contadorPalavrasPares: ContadorPalavrasPares
   public contadorPalavrasComecadasComMaiusculas: ContadorPalavrasComecadasComMaiusculas
@@ -14,7 +14,12 @@ class ContadorPalavrasObserver {
       this.contadorPalavrasComecadasComMaiusculas = new ContadorPalavrasComecadasComMaiusculas();
   
       this.contadorPalavras.adicionarObservador();
-      this.contadorPalavras.adicionarObservador();
+      this.contadorPalavrasPares.adicionarObserver();
+      this.contadorPalavrasComecadasComMaiusculas.adicionarObservador();
+    }
+
+    addObserver(observer: Observer): void {
+      this.observers.push(observer);
     }
 
     contar(frase: string) {

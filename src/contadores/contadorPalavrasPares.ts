@@ -22,7 +22,9 @@ class ContadorPalavrasPares {
     get total() {
       return this._total;
     }
-
+    adicionarObserver(){
+      
+    }
   }
 
   export default ContadorPalavrasPares
