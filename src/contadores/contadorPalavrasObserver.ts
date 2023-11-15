@@ -1,31 +1,33 @@
-import ContadorPalavras from './contadorPalavras.js'
-import ContadorPalavrasPares from './contadorPalavrasPares.js'
-import ContadorPalavrasComecadasComMaiusculas from './contadorPalavrasComecadasComMaiusculas.js'
+import Contador from './contador.js'
 
 class ContadorPalavrasObserver {
-  private observers: Observer[] = [];
-  public contadorPalavras: ContadorPalavras
-  public contadorPalavrasPares: ContadorPalavrasPares
-  public contadorPalavrasComecadasComMaiusculas: ContadorPalavrasComecadasComMaiusculas
-
-    constructor() {
-      this.contadorPalavras = new ContadorPalavras();
-      this.contadorPalavrasPares = new ContadorPalavrasPares();
-      this.contadorPalavrasComecadasComMaiusculas = new ContadorPalavrasComecadasComMaiusculas();
+  //private observers: Observer[] = [];
+  public contador: Contador
   
-      this.contadorPalavras.adicionarObservador();
-      this.contadorPalavrasPares.adicionarObserver();
-      this.contadorPalavrasComecadasComMaiusculas.adicionarObservador();
+    constructor() {
+      this.contador = new Contador();
+     
+      this.contador.adicionarObservador();
     }
 
-    addObserver(observer: Observer): void {
-      this.observers.push(observer);
-    }
+    //addObserver(observer: Observer): void {
+    //  this.observers.push(observer);
+    //}
 
-    contar(frase: string) {
-      this.contadorPalavras.contar(frase.split(" "));
-      this.contadorPalavrasPares.contar(frase.split(" "));
-      this.contadorPalavrasComecadasComMaiusculas.contar(frase.split(" "));
+    contar(frase: string, escolha: number) {
+      if(escolha == 1){
+        const retorno = this.contador.contarPalavras(frase.split(" "));
+        return retorno;
+      }else if( escolha == 2){
+        const retorno = this.contador.contarPalavrasPares(frase.split(" "));
+        return retorno;
+      }else if(escolha == 3){
+        const retorno = this.contador.contarPalavrasComecadasComMaiusculas(frase.split(" "));
+        return retorno;
+      }else{
+        const retorno = 'Escolha não existe';
+        return retorno;
+      }
     }
 
   }

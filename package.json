@@ -1,0 +1,16 @@
+{
+  "name": "design_patterns",
+  "version": "1.0.0",
+  "description": "Repositorio destinado ao trabalho utlizando Design Patterns",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "mocha src/test/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}

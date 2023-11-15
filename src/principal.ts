@@ -1,8 +1,9 @@
 import ContadorPalavrasObserver from './contadores/contadorPalavrasObserver.js'
 
 const contadorPalavrasObserver = new ContadorPalavrasObserver();
-contadorPalavrasObserver.contar("Frase Teste um dois tres D gegdfgewrgewfgsd");
-  
-console.log("Total de palavras:", contadorPalavrasObserver.contadorPalavras.total);
-console.log("Total de palavras com quantidades pares de caracteres:", contadorPalavrasObserver.contadorPalavrasPares.total);
-console.log("Total de palavras começadas com maiúsculas:", contadorPalavrasObserver.contadorPalavrasComecadasComMaiusculas.total);
+
+const frase = "Uso amaciante em casa";
+
+console.log("Total de palavras: " , contadorPalavrasObserver.contar( frase, 1 ));
+console.log("Total de palavras com numero de caracteres pares: " , contadorPalavrasObserver.contar( frase, 2 ));
+console.log("Total de palavras começadas com letras maiusculas: " , contadorPalavrasObserver.contar( frase, 3 ));
