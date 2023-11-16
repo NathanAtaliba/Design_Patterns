@@ -1,4 +1,4 @@
-import Observavel from '../contadores/Observavel.ts';
+import Observavel from '../contadores/Observavel';
 interface iObservador {
     update(obs: Observavel): void;
 }
