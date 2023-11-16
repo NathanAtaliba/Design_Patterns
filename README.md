@@ -15,7 +15,7 @@ A ideia do repositorio é contar as palavras de uma frase qualquer e notificar o
 
 # Comandos para utilização do projeto:
 
-```tsc src/principal.ts``` -> Para adicionar as dependencias do projeto.
+```npm install``` -> Para adicionar as dependencias do projeto.
 
 ```tsc src/principal.ts``` -> Caso nao esteja gerado os arquivos .js utilizar esse comando.
 
