@@ -1,9 +1,10 @@
-import ContadorPalavrasObserver from './contadores/contadorPalavrasObserver.js'
+import Observador from "./contadores/Observador";
+import Observavel from "./contadores/Observavel";
 
-const contadorPalavrasObserver = new ContadorPalavrasObserver();
 
-const frase = "Uso amaciante em casa";
+const observador = new Observador(1);
+const observavel = new Observavel();
 
-console.log("Total de palavras: " , contadorPalavrasObserver.contar( frase, 1 ));
-console.log("Total de palavras com numero de caracteres pares: " , contadorPalavrasObserver.contar( frase, 2 ));
-console.log("Total de palavras começadas com letras maiusculas: " , contadorPalavrasObserver.contar( frase, 3 ));
+observavel.adicionarObservador(observador);
+observavel.setFrase("Exemplo de frase");
+observavel.notificaObservadores();

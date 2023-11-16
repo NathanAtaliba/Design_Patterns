@@ -1,7 +1,6 @@
-import ContadorPalavrasObserver from "../contadores/contadorPalavrasObserver";
-
+import Observavel from '../contadores/Observavel.ts';
 interface iObservador {
+    update(obs: Observavel): void;
+}
 
-    update(contador : ContadorPalavrasObserver ): void;
-    
-  }
+export default iObservador;

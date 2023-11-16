@@ -1,9 +1,12 @@
+import Observador from "../contadores/Observador";
+
 interface iObservavel {
-  update(frase: number): void;
 
-  //registraObservador(obs: Observador): void;
+  adicionarObservador(obs: Observador): void;
 
-	//removeObservador(obs: observador): void;
+	removeObservador(obs: Observador): void;
   
 	notificaObservadores(): void ;
   }
+
+  export default iObservavel;
