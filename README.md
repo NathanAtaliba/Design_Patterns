@@ -1,5 +1,5 @@
 # Design_Patterns
-Repositorio destinado ao trabalho utlizando Design Patterns
+Repositorio destinado ao trabalho utilizando Design Patterns
 
 # Ideia:
 A ideia do repositorio é contar as palavras de uma frase qualquer e notificar os observers.
