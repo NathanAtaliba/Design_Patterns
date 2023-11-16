@@ -9,21 +9,24 @@ class Observavel implements iObservavel {
       this.observadores = [];
   }
 
-  adicionarObservador(obs: Observador): void {
+  adicionarObservador(obs: Observador){
       this.observadores.push(obs);
+      return 'Observador adicionado!';
   }
 
-  removeObservador(obs: Observador): void {
+  removeObservador(obs: Observador){
       const index = this.observadores.indexOf(obs);
       if (index !== -1) {
           this.observadores.splice(index, 1);
       }
+      return 'Observador removido!';
   }
 
-  notificaObservadores(): void {
+  notificaObservadores(){
       for (const observador of this.observadores) {
           observador.update(this);
       }
+      return 'Observadores notificados!';
   }
 
   NumeroDePalavras(frase: string): number {

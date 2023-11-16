@@ -9,6 +9,7 @@ var Observador = /** @class */ (function () {
         console.log("Contando todas as palavras: ".concat(obs.NumeroDePalavras(obs.getFrase())));
         console.log("Contando palavras pares: ".concat(obs.NumeroPalavrasMaiusculas(obs.getFrase())));
         console.log("Contando palavras mai\u00FAsculas: ".concat(obs.NumeroPalavrasMaiusculas(obs.getFrase())));
+        return 'Observador atualizado';
     };
     return Observador;
 }());

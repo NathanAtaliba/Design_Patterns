@@ -8,18 +8,21 @@ var Observavel = /** @class */ (function () {
     }
     Observavel.prototype.adicionarObservador = function (obs) {
         this.observadores.push(obs);
+        return 'Observador adicionado!';
     };
     Observavel.prototype.removeObservador = function (obs) {
         var index = this.observadores.indexOf(obs);
         if (index !== -1) {
             this.observadores.splice(index, 1);
         }
+        return 'Observador removido!';
     };
     Observavel.prototype.notificaObservadores = function () {
         for (var _i = 0, _a = this.observadores; _i < _a.length; _i++) {
             var observador = _a[_i];
             observador.update(this);
         }
+        return 'Observadores notificados!';
     };
     Observavel.prototype.NumeroDePalavras = function (frase) {
         this.frase = frase;

@@ -19,5 +19,8 @@ A ideia do repositorio é contar as palavras de uma frase qualquer e notificar o
 
 ```node src/principal.js``` -> Conta as palavras e notifica os observes
 
+# Testes:
+
 ```npm test``` -> Faz os testes de contagem e de notificação do observador
 
+É testado se os metodos de contagem estão retornando o esperado e se os observers estao sendo adicionados, removidos e notificados.

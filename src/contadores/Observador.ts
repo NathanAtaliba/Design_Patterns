@@ -7,11 +7,12 @@ class Observador implements iObservador {
         this.id = id;
     }
 
-    update(obs: Observavel): void {
+    update(obs: Observavel) {
         console.log(`Observador ${this.id} foi notificado`);
         console.log(`Contando todas as palavras: ${obs.NumeroDePalavras(obs.getFrase())}`);
         console.log(`Contando palavras pares: ${obs.NumeroPalavrasMaiusculas(obs.getFrase())}`);
         console.log(`Contando palavras maiúsculas: ${obs.NumeroPalavrasMaiusculas(obs.getFrase())}`);
+        return 'Observador atualizado'
     }
 }
 export default Observador
