@@ -19,7 +19,7 @@ A ideia do repositorio é contar as palavras de uma frase qualquer e notificar o
 
 ```npm i @types/mocha``` -> Adiciona as dependencias para teste do mocha
 
-```npm install -g typescript``` -> Para poder usar tsc no terminal
+```npm install -g typescript``` -> Adicionar typescript globalmente para ser usado
 
 ```tsc src/principal.ts``` -> Caso nao esteja gerado os arquivos .js utilizar esse comando.
 
