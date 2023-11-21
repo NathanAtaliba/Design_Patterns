@@ -17,7 +17,7 @@ A ideia do repositorio é contar as palavras de uma frase qualquer e notificar o
 
 ```npm install``` -> Para adicionar as dependencias do projeto.
 
-```npm i --save-dev @types/mocha``` -> Adiciona as dependencias para teste do mocha
+```npm i @types/mocha``` -> Adiciona as dependencias para teste do mocha
 
 ```npm install -g typescript``` -> Para poder usar tsc no terminal
 
